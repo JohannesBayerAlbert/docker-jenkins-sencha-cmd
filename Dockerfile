@@ -21,8 +21,5 @@ ENV PATH /opt/sencha/cmd/6.2.2/bin:$PATH
 
 USER jenkins
 
-COPY plugins.txt /usr/share/jenkins/plugins.txt
-RUN /usr/local/bin/install-plugins.sh /usr/share/jenkins/plugins.txt
-
 WORKDIR /code
 
